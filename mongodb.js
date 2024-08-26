@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-mongoose.connect("mongodb+srv://admin:da3WO9n8C1x5IU98@cluster0.axon7.mongodb.net/Users")
+mongoose.connect("mongodb+srv://admin:***@cluster0.axon7.mongodb.net/Users")
 
 const User = mongoose.model('Users', {username : String, email : String, password : String})
 
