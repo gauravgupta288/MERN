@@ -41,7 +41,8 @@ app.post("/signin", (req, res) =>{
 
     const token = jwt.sign({user}, jwtPassword)
     return res.json({
-        token,
+        user : user,
+        Auth_Token : token
     })
 })
 const schema = zod.array(zod.number())
